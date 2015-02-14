@@ -1,0 +1,24 @@
+﻿<ViewModel:MainViewModel xmlns:ViewModel="using:App2.ViewModel" xmlns:Model="using:App2.Model" >
+	<ViewModel:MainViewModel.AllItems>
+		<Model:Items itemName="Ancient Tome"
+                itemImg = "/SampleData/SampleDataSource/SampleDataSource_Files/Amplifying_Tome_item.png"
+                itemBonuses = "+20 Ability Power"
+                itemCost = "435g"/>
+		<Model:Items itemName = "Ancient Coin"
+                itemImg = "/SampleData/SampleDataSource/SampleDataSource_Files/Ancient_coin_item.png"
+                itemBonuses = "+25% Mana Regen per 5 seconds"
+                itemCost = "365g"/>
+		<Model:Items  itemName = "B.F. Sword"
+                itemImg = "/SampleData/SampleDataSource/SampleDataSource_Files/B._F._Sword_item.png"
+                itemBonuses = "+50 Attack Damage"
+                itemCost = "1550g"/>
+		<Model:Items itemName = "Blasting Wand"
+                itemImg = "/SampleData/SampleDataSource/SampleDataSource_Files/Blasting_Wand_item.png"
+                itemBonuses = "+40 Ability Power"
+                itemCost = "860g"/>
+		<Model:Items itemName = "Boots of Speed"
+                itemImg = "/SampleData/SampleDataSource/SampleDataSource_Files/Boots_of_Speed_item.png"
+                itemBonuses = "N/A"
+                itemCost = "325g"/>
+	</ViewModel:MainViewModel.AllItems>
+</ViewModel:MainViewModel>

@@ -1,0 +1,14 @@
+﻿<ViewModel:MainViewModel xmlns:ViewModel="using:App2.ViewModel" xmlns:Model="using:App2.Model" >
+	<ViewModel:MainViewModel.AllPlayers>
+		<Model:Players id="94" img="Aliquam maecenas cras vestibulum" playertitle="Parturient vestibulum" playername="Integer class adipiscing nam" primary_secondary="Praesent aenean curabitur sed mauris"/>
+		<Model:Players id="69" img="Quisque dis est vivamus" playertitle="Accumsan bibendum adipiscing hac duis" playername="Vestibulum phasellus aliquam" primary_secondary="Dictumst aliquet"/>
+		<Model:Players id="56" img="Eleifend parturient leo blandit commodo" playertitle="Conubia nec vestibulum nunc" playername="Curae donec mus vestibulum etiam" primary_secondary="Amet fusce lorem"/>
+		<Model:Players id="17" img="Non per nullam sed cubilia" playertitle="Parturient ante vestibulum" playername="Sem adipiscing" primary_secondary="Vestibulum aptent adipiscing dapibus"/>
+		<Model:Players id="62" img="Sit arcu" playertitle="Vel euismod parturient diam" playername="Egestas morbi" primary_secondary="Consequat eget feugiat nam convallis"/>
+		<Model:Players id="77" img="Vestibulum dignissim vestibulum auctor gravida" playertitle="Nulla cursus est adipiscing" playername="Congue facilisi sed dis" primary_secondary="Elit faucibus dictum proin"/>
+		<Model:Players id="19" img="Lectus iaculis parturient elementum libero" playertitle="Facilisis hac" playername="Vestibulum augue" primary_secondary="Habitant dolor fermentum fames"/>
+		<Model:Players id="57" img="Enim lacinia laoreet felis" playertitle="Justo mus lacus posuere nec" playername="Vestibulum leo ipsum natoque" primary_secondary="Fringilla non"/>
+		<Model:Players id="69" img="Lorem erat magna massa" playertitle="Sed adipiscing litora" playername="Habitasse ligula inceptos per" primary_secondary="Parturient potenti pretium"/>
+		<Model:Players id="26" img="Luctus interdum" playertitle="Mattis lobortis nibh" playername="Magnis eros hendrerit sem vestibulum" primary_secondary="Rhoncus sit himenaeos vel"/>
+	</ViewModel:MainViewModel.AllPlayers>
+</ViewModel:MainViewModel>

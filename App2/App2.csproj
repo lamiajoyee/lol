@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B27F882-311A-4996-96BB-FF3D1402EECF}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App2</RootNamespace>
+    <AssemblyName>App2</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ExpressionBlendVersion>12.0.50716.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Champion.xaml.cs">
+      <DependentUpon>Champion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExpaControl\ExpanderControl.cs" />
+    <Compile Include="ExpaControl\HeaderedItemsControl.cs" />
+    <Compile Include="ExpaControl\HierarchicalDataTemplate.cs" />
+    <Compile Include="ExpaControl\ItemsControlHelper.cs" />
+    <Compile Include="ExpaControl\VisualTreeExtensions.cs" />
+    <Compile Include="FirstPage.xaml.cs">
+      <DependentUpon>FirstPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CollectionUtils.cs" />
+    <Compile Include="Item.xaml.cs">
+      <DependentUpon>Item.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsPage.xaml.cs">
+      <DependentUpon>ItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExampleClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
+      <DependentUpon>SampleDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\15px-IpPoints.png" />
+    <Content Include="Assets\15px-RpPoints.png" />
+    <Content Include="Assets\99f9935b-641e-434e-b2f3-4e45f2b86121.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\blrr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\blrr2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\btnBg.png" />
+    <Content Include="Assets\buttonBottom.png" />
+    <Content Include="Assets\divider.png" />
+    <Content Include="Assets\kayle.png" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\lol-logo-league-of-legends-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lolBg.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\texture.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="lol-logo-league-of-legends.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README_FIRST.txt" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\aatrox.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\aatroxBig.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Aegis_of_the_Legion_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Alacrity_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\alistar.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Amplifying_Tome_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Ancient_Coin_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\B._F._Sword_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Blades_of_Torment.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Blasting_Wand_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Blood_Price.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Blood_Thirst.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Blood_Well.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Boots_of_Speed_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Brawler%27s_Gloves_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Captain_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Chalice_of_Harmony_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Cloak_of_Agility_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Cloth_Armor_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Dagger_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Dark_Flight.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Distortion_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Doran%27s_Blade_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Doran%27s_Ring_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Doran%27s_Shield_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Faerie_Charm_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\fiddlesticks.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Furor_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\gangplank.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Homeguard_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Hunter%27s_Machete_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image06.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image07.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image08.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image09.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\image10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\janna.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\kayle.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Long_Sword_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Massacre.jpg" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Mercury%27s_Treads_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Moonflair_Spellblade_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\mordekaiser.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Needlessly_Large_Rod_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Negatron_Cloak_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Null-Magic_Mantle_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Pickaxe_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\Prospector%27s_Ring_item.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\rayze.png" />
+    <Content Include="SampleData\SampleDataSource\SampleDataSource_Files\sona.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Champion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExpaResource\ExpanderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FirstPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Item.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ItemsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleData\SampleDataSource\SampleDataSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\packages\MvvmLightLibs.5.0.2.0\lib\wpa81\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras">
+      <HintPath>..\packages\MvvmLightLibs.5.0.2.0\lib\wpa81\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform">
+      <HintPath>..\packages\MvvmLightLibs.5.0.2.0\lib\wpa81\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graph1.dgml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="SampleData\ItemsSampleData.xaml" />
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
